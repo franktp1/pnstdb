@@ -1,4 +1,4 @@
-CREATE OR REPLACE procedure defaultHandlerPlanSetting()
+CREATE OR REPLACE PROCEDURE defaultHandlerPlanSetting()
 LANGUAGE plpgsql
 AS $$
 declare
