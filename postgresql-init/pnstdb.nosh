@@ -1,8 +1,12 @@
 #!/bin/bash
 set -e
 echo env
-env
+printenv
 echo end of env
+pwd
+echo workdir
+
+psql -U ${POSTGRESQL_USER} -d ${POSTGRESQL_DATABASE} -f ./setupdb.sql
 
 psql -U ${POSTGRESQL_USER} -d ${POSTGRESQL_DATABASE} -f ./rc.sql
 psql -U ${POSTGRESQL_USER} -d ${POSTGRESQL_DATABASE} -f ./ps.sql
