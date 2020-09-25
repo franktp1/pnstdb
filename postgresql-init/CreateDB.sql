@@ -1,0 +1,10 @@
+-- Database: PNST
+
+-- DROP DATABASE "PNST";
+
+CREATE DATABASE "PNST"
+    WITH 
+    OWNER = "PNST_OWNER"
+    ENCODING = 'UTF8'
+    TABLESPACE = pnst_data
+    CONNECTION LIMIT = -1;
