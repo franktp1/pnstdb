@@ -9,7 +9,8 @@ id
 echo that is me
 
 # database creation as in default way 
-sudo /usr/share/container-scripts/postgresql/start/set_passwords.sh
+# NOW DONE AS END OF progresql-init
+#sudo /usr/share/container-scripts/postgresql/start/set_passwords.sh
 
 #psql -U ${POSTGRESQL_USER} -d ${POSTGRESQL_DATABASE} -f ./postgresql-init/setupdb.sql
 
