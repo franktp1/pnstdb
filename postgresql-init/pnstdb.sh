@@ -6,7 +6,10 @@ echo end of env
 pwd
 echo workdir
 
-psql -U ${POSTGRESQL_USER} -d ${POSTGRESQL_DATABASE} -f ./setupdb.sql
+# database creation as in default way 
+/usr/share/container-scripts/postgresql/start/set_passwords.sh
+
+#psql -U ${POSTGRESQL_USER} -d ${POSTGRESQL_DATABASE} -f ./setupdb.sql
 
 psql -U ${POSTGRESQL_USER} -d ${POSTGRESQL_DATABASE} -f ./rc.sql
 psql -U ${POSTGRESQL_USER} -d ${POSTGRESQL_DATABASE} -f ./ps.sql
